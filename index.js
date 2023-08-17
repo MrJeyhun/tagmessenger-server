@@ -8,7 +8,7 @@ const queries = require("./queries");
 const { initSocketServer } = require("./socket");
 
 //port
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 //middleware
 const app = express();
